@@ -6,7 +6,7 @@
         -p 17179:17179 \
         --add-host example.com:0.0.0.0 \
         -e "XMAGE_DOCKER_SERVER_ADDRESS=example.com" \
-        goesta/xmage
+        goesta/xmage-server
 
 
 XMage needs to know the domain name the server is running on. The `--add-host` option adds an entry to the containers `/etc/hosts` file for this domain. 
@@ -23,7 +23,7 @@ If you like to preserve the database during updates and restarts you can mount a
     version: '2'
     services:
     mage:
-        image: goesta/xmage
+        image: goesta/xmage-server
         ports:
          - "17171:17171"
          - "17179:17179"
