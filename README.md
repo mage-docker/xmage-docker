@@ -1,6 +1,17 @@
-# XMage Server
+# XMage Server Docker Images
+This Project automates the creation of Docker Images for every new versions of [XMage](https://github.com/magefree/mage) Server. 
+
+**There has been no official release of XMage since over a year. Most People are playing on the beta version now.**
+
+You can find Docker Images for the Beta Server here: https://github.com/mage-docker/xmage-beta-docker
+
+The latest beta client can be donloaded at http://xmage.today
 
 ## Usage
+
+All Images are taged with the version number. So you can run older versions by including the tag when creating the container. You can see all available tags under tags.
+
+
     docker run --rm -it \
         -p 17171:17171 \
         -p 17179:17179 \
